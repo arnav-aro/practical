@@ -1,0 +1,84 @@
+Exp1
+1.Make folder on desktop
+2.Add three html files
+3.go to cmd then reach to the folder on desktop
+4.type git init on cmd
+5.then git add .
+6.git config --global user.email "yourmail"
+7.git config --global user.name "your name"
+8.git commit -m "Initial commit"
+9.git remote add origin addyourrepolinkfromgithub
+10.git push -u origin master
+11.it will ask for browser authentication do it
+12.now check its pushed
+13.git pull origin master(for pulling)
+
+Exp2
+0.check java --version(cmd)
+1.download jdk 17/21 from oracle java
+2.open jenkins website
+3.install lts windows version
+4.run installation wizard
+5.select login type as runas localsystem
+6.select port number
+7.add file path of jdk 17/21
+8.http://localhost:8080 (on browser as per port)
+9.open given path on your pc
+10.open that file in notepad for the password
+11.install suggested plugins option
+12.create credentials for user
+13.now create folder consisting file for java code
+14. Add new item
+15. ⁠add item name
+16. ⁠select freestyle project n ok
+17. ⁠general->advanced->custom workspace
+18. ⁠copy file path of the code directory
+19. build steps->execute windows batch command
+20. ⁠write command 
+⁠     Javac add.java
+  Java add
+21. click save
+22. come in build now
+23. ⁠click on #1
+24. come in console output
+
+Exp6
+1.put selenium code
+2.run if not running(go to terminal write pip install selenium)
+3. have patience will take time
+
+Exp3
+1. add new item
+2. ⁠add item name ‘addition pipeline’
+3. ⁠select pipeline
+4. ⁠click ok
+5. ⁠copy pipeline script from drive
+6. ⁠click save
+7. ⁠click build now
+8. ⁠click #1
+9. ⁠dropdown console output
+10. ⁠go to additional pipeline
+11. ⁠build with parameter
+12. ⁠enter parameters
+13. ⁠click on build
+14. ⁠once build is done click on #2
+15. ⁠dropdown console output
+
+Exp 7 
+1.install docker 
+2.login
+3.docker --version
+4.docker login
+5.docker pull hello-world
+6.open notepad
+7.FROM ubuntu:20.04
+RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+CMD ["echo", "Hello-World"]
+8.save as "dockerfile" (save exactly with double quotes)
+9.docker build -t exp7 C:\User\download (where the dockerfile is save)
+10.docker tag exp7:latest username/exp7:latest
+11. docker push username/exp7:latest
+12.docker ps(to check which all cointainer are running)
+13.docker images 
+14.docker stop CONTAINER_ID_OR_NAME (to close all the running cointainer) docker stop $(docker ps -q)
+
